@@ -1,0 +1,716 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Jera Replica'#231#227'o'
+  ClientHeight = 582
+  ClientWidth = 640
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Bottom
+    Position.Y = 532.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object BtnOK: TSpeedButton
+      Align = Right
+      Position.X = 544.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = BtnOKClick
+      object Path3: TPath
+        Align = Center
+        Data.Path = {
+          1B000000000000002F72E641000000000100000041CCFF410000000002000000
+          C0AB0042F63F8A3E020000007CABF941F4E71B3F020000000E6EF541E987763F
+          02000000EAB7B6416F8FC6400200000097A582412F8B504102000000F1382841
+          C3F59D410200000003EBDD40F42884410200000079D470400F5A504102000000
+          0000000073BC1E4102000000A511233F541014410200000098DAB93FF5530B41
+          02000000A9AB1C40358704410200000094FB8540548D1341020000009A57B540
+          D34F214102000000149BF840B174314102000000D705014150B6334102000000
+          05E52041D04D424102000000549D23410F2D424102000000A0A9294110DB4141
+          02000000E7E2394131B42E4102000000D3DE4341916E26410200000045188641
+          EE26D54002000000D809BA41F2181C40020000002F72E6410000000003000000
+          2F72E64100000000}
+        Fill.Color = claRoyalblue
+        HitTest = False
+        Size.Width = 36.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object BtnFechar: TSpeedButton
+      Align = Right
+      Position.X = 592.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = BtnFecharClick
+      object Path4: TPath
+        Align = Center
+        Data.Path = {
+          0D000000000000006666E640000000000100000000008041CCCC0C4101000000
+          6666C6410000000001000000000000426666E640010000009A99B94100008041
+          01000000000000426666C641010000006666C641000000420100000000008041
+          9A99B941010000006666E6400000004201000000000000006666C64101000000
+          CCCC0C410000804101000000000000006666E640030000006666E64000000000}
+        Fill.Color = claRoyalblue
+        HitTest = False
+        Size.Width = 31.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object BtnOpenFDB: TSpeedButton
+      Align = Right
+      Position.X = 592.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = BtnOpenFDBClick
+      object Path1: TPath
+        Align = Center
+        Data.Path = {
+          0E00000000000000004E12407F6CDB4001000000004E1240D724C94101000000
+          00124340D724C94101000000C04912417F6CDB4003000000004E12407F6CDB40
+          0000000000000000000000000100000040DD3641000000000100000040DD3641
+          C04D124001000000A06EDB41C04D124001000000A06EDB417F6CDB4001000000
+          000000427F6CDB4001000000E024C941976EDB410100000000000000976EDB41
+          030000000000000000000000}
+        Fill.Color = claRoyalblue
+        HitTest = False
+        Size.Width = 36.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Layout3: TLayout
+      Align = Client
+      Size.Width = 592.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label1: TLabel
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Size.Width = 582.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.Trimming = None
+        Text = 'Arquivo do Banco de Dados'
+        TabOrder = 0
+      end
+      object EdtFDBFile: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 1
+        Text = 'C:\Program Files\Jera Soft Co\STSE v2\Dados\JERA_STSE.FDB'
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 572.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object Layout4: TLayout
+    Align = Top
+    Position.Y = 294.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 83.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object Rectangle1: TRectangle
+      Align = Top
+      Fill.Color = claAliceblue
+      Margins.Top = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 640.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      object RbMaster: TRadioButton
+        StyledSettings = [Family, Size, FontColor]
+        IsChecked = True
+        Position.X = 10.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 239.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Replica'#231#227'o Banco Principal'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      object RbMasterOff: TRadioButton
+        StyledSettings = [Family, Size, FontColor]
+        Position.X = 10.000000000000000000
+        Position.Y = 21.000000000000000000
+        Size.Width = 239.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Cancelar a Replica'#231#227'o Banco Principal'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      object ChkFileCopy: TCheckBox
+        StyledSettings = [Family, Size, FontColor]
+        IsChecked = True
+        Position.X = 272.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Efetuar c'#243'pia do arquivo FDB'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      object ChkCriarFTP: TCheckBox
+        StyledSettings = [Family, Size, FontColor]
+        IsChecked = True
+        Position.X = 272.000000000000000000
+        Position.Y = 19.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Criar o Envio de FTP'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object Rectangle2: TRectangle
+      Align = Client
+      Fill.Color = claAzure
+      Margins.Top = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Size.Width = 640.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      object RbClient: TRadioButton
+        StyledSettings = [Family, Size, FontColor]
+        Position.X = 10.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 207.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Replica'#231#227'o Banco de Replica'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      object RbCancelarClient: TRadioButton
+        StyledSettings = [Family, Size, FontColor]
+        Position.X = 10.000000000000000000
+        Position.Y = 17.000000000000000000
+        Size.Width = 255.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Cancelar a Replica'#231#227'o Banco de Replica'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+  object Layout5: TLayout
+    Align = Top
+    Position.Y = 100.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object BtnPathFB: TSpeedButton
+      Align = Right
+      Position.X = 592.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = BtnPathFBClick
+      object Path2: TPath
+        Align = Center
+        Data.Path = {
+          0E00000000000000004E12407F6CDB4001000000004E1240D724C94101000000
+          00124340D724C94101000000C04912417F6CDB4003000000004E12407F6CDB40
+          0000000000000000000000000100000040DD3641000000000100000040DD3641
+          C04D124001000000A06EDB41C04D124001000000A06EDB417F6CDB4001000000
+          000000427F6CDB4001000000E024C941976EDB410100000000000000976EDB41
+          030000000000000000000000}
+        Fill.Color = claRoyalblue
+        HitTest = False
+        Size.Width = 36.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Layout6: TLayout
+      Align = Client
+      Size.Width = 592.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label2: TLabel
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Size.Width = 582.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.Trimming = None
+        Text = 'Path Firebird'
+        TabOrder = 0
+      end
+      object EdtFirebirdPath: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 1
+        Text = 'C:\Jera Soft Co\Firebird_Jerasoft'
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 572.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object MMHistorico: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 155.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 151.000000000000000000
+  end
+  object OpenDLG: TOpenDialog
+    Filter = 'Arquivo FDB (*.fdb)|*.fdb'
+    Left = 8
+    Top = 512
+  end
+  object Layout7: TLayout
+    Align = Top
+    Position.Y = 50.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object SpeedButton1: TSpeedButton
+      Align = Right
+      Position.X = 592.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = BtnPathFBClick
+      object Path5: TPath
+        Align = Center
+        Data.Path = {
+          0E00000000000000004E12407F6CDB4001000000004E1240D724C94101000000
+          00124340D724C94101000000C04912417F6CDB4003000000004E12407F6CDB40
+          0000000000000000000000000100000040DD3641000000000100000040DD3641
+          C04D124001000000A06EDB41C04D124001000000A06EDB417F6CDB4001000000
+          000000427F6CDB4001000000E024C941976EDB410100000000000000976EDB41
+          030000000000000000000000}
+        Fill.Color = claRoyalblue
+        HitTest = False
+        Size.Width = 36.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Layout8: TLayout
+      Align = Client
+      Size.Width = 592.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label3: TLabel
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Size.Width = 582.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.Trimming = None
+        Text = 'Path base onde as pastas "ARCHIVE" e "JOURNAL" ser'#227'o criadas'
+        TabOrder = 0
+      end
+      object EdtPathBase: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 1
+        Text = 'C:\Jera Soft Co\STSE v2\Dados\Replica'
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 572.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object Layout9: TLayout
+    Align = Top
+    Position.Y = 244.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Text = 'localhost'
+      Position.X = 10.000000000000000000
+      Position.Y = 18.000000000000000000
+      Enabled = False
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 87.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label4: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Size.Width = 95.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Host'
+      TabOrder = 3
+    end
+    object EdtUsuario: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Text = 'SYSDBA'
+      Position.X = 102.000000000000000000
+      Position.Y = 18.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 77.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label5: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 102.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Usu'#225'rio'
+      TabOrder = 2
+    end
+    object Label6: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 182.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Pwd'
+      TabOrder = 1
+    end
+    object EdtPassword: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Password = True
+      Text = 'masterkey'
+      Position.X = 182.000000000000000000
+      Position.Y = 18.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 77.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label7: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 264.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Porta'
+      TabOrder = 0
+    end
+    object EdtPorta: TNumberBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 7
+      Cursor = crIBeam
+      Max = 65565.000000000000000000
+      Value = 3050.000000000000000000
+      Position.X = 264.000000000000000000
+      Position.Y = 18.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Layout10: TLayout
+    Align = Top
+    Position.Y = 150.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 94.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object BtnArquivoFTP: TSpeedButton
+      Align = Right
+      Position.X = 592.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 94.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = BtnArquivoFTPClick
+      object Path6: TPath
+        Align = Center
+        Data.Path = {
+          1900000000000000102BF1411258B14101000000000000421258B14101000000
+          0000004260E5E2410100000000000042F0A7EA41010000000000004260BAF141
+          0100000000E0793D60BAF1410100000000E0793DA01CEC410100000000000000
+          A01CEC410100000000000000C2CCB241010000000071ED3FC2CCB24101000000
+          0071ED3F60E5E24101000000102BF14160E5E24103000000102BF1411258B141
+          0000000027DB814120B01A4001000000AD9B3041AA70F540010000004DE1AB41
+          9C43F7400300000027DB814120B01A400000000027DB81410000000001000000
+          DDA3CC413733174101000000DDCE8941CC76164101000000DDCE89410C81D241
+          01000000A6EF75410C81D24101000000A6EF7541D74D1641010000005B8DDF40
+          538D15410300000027DB814100000000}
+        Fill.Color = claRoyalblue
+        HitTest = False
+        Size.Width = 36.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Label8: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 107.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Usu'#225'rio FTP'
+      TabOrder = 8
+    end
+    object EdtUsuarioFTP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 13
+      Position.X = 8.000000000000000000
+      Position.Y = 20.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label9: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 403.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Porta'
+      TabOrder = 0
+    end
+    object EdtPortaFTP: TNumberBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 14
+      Cursor = crIBeam
+      Max = 65565.000000000000000000
+      Position.X = 403.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 43.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label10: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 103.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 107.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'HostFTP'
+      TabOrder = 3
+    end
+    object EdtHostFTP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 12
+      Position.X = 103.000000000000000000
+      Position.Y = 20.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 296.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object ChkCriarAgendamento: TCheckBox
+      StyledSettings = [Family, Size, FontColor]
+      IsChecked = True
+      Position.X = 454.000000000000000000
+      Position.Y = 59.000000000000000000
+      Size.Width = 138.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Criar agendamento'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Label11: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 46.000000000000000000
+      Size.Width = 107.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Nome App Envio'
+      TabOrder = 6
+    end
+    object EdtNomeAppEnvio: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 10
+      Text = 'Replica'
+      Position.X = 8.000000000000000000
+      Position.Y = 63.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label12: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 144.000000000000000000
+      Position.Y = 46.000000000000000000
+      Size.Width = 181.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Nome Servi'#231'o Envio'
+      TabOrder = 7
+    end
+    object EdtNomeServicoEnvio: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 11
+      Text = 'JeraFTPReplica'
+      Position.X = 144.000000000000000000
+      Position.Y = 64.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object EdtPwdFtp: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Password = True
+      Position.X = 451.000000000000000000
+      Position.Y = 20.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 102.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label13: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Position.X = 451.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Trimming = None
+      Text = 'Pwd FTP'
+      TabOrder = 1
+    end
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=JERA_STSE_BIG'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=192.168.1.26'
+      'Port=3058'
+      'DriverID=FB'
+      'CharacterSet=WIN1252'
+      'PageSize=16384')
+    LoginPrompt = False
+    Left = 80
+    Top = 520
+  end
+  object Qry: TFDQuery
+    Connection = FDConnection1
+    Left = 216
+    Top = 518
+  end
+  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+    VendorLib = '.\fbclient.dll'
+    Left = 152
+    Top = 526
+  end
+end
