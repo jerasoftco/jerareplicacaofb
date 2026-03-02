@@ -2,6 +2,8 @@
 
 **App em Delphi para replicação assíncrona de banco de dados Firebird**
 
+<img src="Asset/Screenshot.png" alt="Screenshot" width="400">
+
 [![License: LGPL v2.1](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
 Este aplicativo automatiza a configuração de **replicação assíncrona nativa do Firebird 4+ / 5+** baseada em journal segments + archive, ideal para ambientes Windows com alto volume de transações.
